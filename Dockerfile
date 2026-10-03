@@ -9,6 +9,6 @@
 
    COPY . .
 
-   EXPOSE 5000
+   EXPOSE 3000
 
    CMD ["python", "app.py"]
