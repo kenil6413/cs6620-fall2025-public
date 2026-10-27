@@ -566,6 +566,14 @@ def auto_load_data():
             
         except Exception as e:
             app.logger.error(f"Failed to auto-load CSV: {e}")
+            
+@app.route('/')
+def hello():
+    return '''
+    <h1>Hello from Automated CI/CD Pipeline!</h1>
+    <p><strong>Version:</strong> 2.0 - Automated Deployment</p>
+    <p><strong>Deployed via:</strong> GitHub Actions + AWS SSM</p>
+    '''
 
 
 if __name__ == '__main__':
